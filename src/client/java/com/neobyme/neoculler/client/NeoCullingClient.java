@@ -31,7 +31,7 @@ if (ctrlDown(mc)) mc.gui.setScreen(new NeoSettingsScreen(null));
 }
 
 private static boolean ctrlDown(Minecraft mc) {
-return InputConstants.isKeyDown(mc.getWindow(), KEY_LEFT_CTRL)
-|| InputConstants.isKeyDown(mc.getWindow(), KEY_RIGHT_CTRL);
+return InputConstants.isKeyDown(KEY_LEFT_CTRL)
+|| InputConstants.isKeyDown(KEY_RIGHT_CTRL);
 }
 }
