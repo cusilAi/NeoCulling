@@ -97,7 +97,7 @@ public final class Culler {
 	}
 
 	private static boolean blocked(Level level, Entity e, Vec3 from, double x, double y, double z) {
-		ClipContext ctx = new ClipContext(from, new Vec3(x, y, z), ClipContext.Block.VISIBILITY, ClipContext.Fluid.NONE, e);
+		ClipContext ctx = new ClipContext(from, new Vec3(x, y, z), ClipContext.Block.VISUAL, ClipContext.Fluid.NONE, e);
 		return level.clip(ctx).getType() != HitResult.Type.MISS;
 	}
 

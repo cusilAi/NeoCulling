@@ -74,6 +74,6 @@ public class NeoSettingsScreen extends Screen {
 	@Override
 	public void onClose() {
 		Cfg.save();
-		if (this.minecraft != null) this.minecraft.setScreen(parent);
+		if (this.minecraft != null) this.minecraft.gui.setScreen(parent);
 	}
 }
