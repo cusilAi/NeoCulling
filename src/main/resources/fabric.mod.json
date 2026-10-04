@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "neoculling",
+	"version": "${version}",
+	"name": "NeoCuller",
+	"description": "Client-side culling and render optimization with an in-game settings GUI (Ctrl + I).",
+	"authors": ["NeoByMe", "Haseeb"],
+	"license": "All-Rights-Reserved",
+	"icon": "assets/neoculling/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": ["com.neobyme.neoculler.NeoCulling"],
+		"client": ["com.neobyme.neoculler.client.NeoCullingClient"]
+	},
+	"mixins": [
+		{
+			"config": "neoculling.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
